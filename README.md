@@ -468,6 +468,6 @@ for (let i = 0; i < 10; i++) {
 
 - [JavaScript入門 - ドットインストール](https://dotinstall.com/lessons/basic_javascript_v2)
 
-### 記事で学ぶ
+### 本で学ぶ
 
 - [Eloquent JavaScript 3rd Edition](http://eloquentjavascript.net/)

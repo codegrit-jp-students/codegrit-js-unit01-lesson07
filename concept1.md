@@ -13,7 +13,6 @@
 まずfor文の書き方を見て見ましょう。for文のシンタックス(構文)は次の通りになります。
 
 ```js
-
 for (初期化式; 条件式; 変化式) {
   文；
   文;
@@ -71,12 +70,14 @@ for　(let i = 1; i < 3; i++) {
 ```js
 let sum = 0;
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i <= 10; i++) {
   sum = sum + i;
 }
 
 console.log(sum); // 55
 ```
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/bgk90qL1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 この場合**_`+=代入演算子_**を使って次のように記述しても同じ結果が得られます。
 
@@ -89,6 +90,8 @@ for (let i = 1; i <= 10; i++) {
 
 console.log(sum); // 55
 ```
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/874hf2wj/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 - サンプルコード2
 
@@ -116,6 +119,8 @@ for (let i = 0; i <= 12; i++) {
 12
 ```
 
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/usapcvkt/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
 - サンプルコード3
 
 先ほどの例では**_カウンタ変数_**と整数値を使って条件式の評価を行いましたが、条件式には他で定義した変数を使うこともできます。
@@ -131,6 +136,8 @@ for(let i = 0; i < arr.length; i++) {
 
 console.log(hello); // "Hello world!"
 ```
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/g2m716r5/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 上の例では配列変数の**lengthプロパティ**を使って配列の要素数を取り出しています。このような方法を取ることで、たとえ要素数が未知の配列であっても繰り返しの処理回数を柔軟に指定することができます。
 
@@ -154,6 +161,8 @@ for (let i = 1; i <= 5; i++) {
 
 document.write('</table>');
 ```
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/da60cLeh/3/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 このサンプルコードをChromeのDeveloperToolのconsoleで実行すると、ブラウザで次のような結果が得られます。
 

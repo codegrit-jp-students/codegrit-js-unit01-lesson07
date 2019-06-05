@@ -53,6 +53,8 @@ while (i < 10) {
 9
 ```
 
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/p7v8Leh1/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
 - サンプルコード2
 
 この例では値が1000に達するまで、変数を2倍にする処理を繰り返しています。
@@ -81,6 +83,8 @@ while (number < 1000) {
 1024
 ```
 
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/h2p5xtd1/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
 変数`number`が512となった後、次の条件式も`true`となるので`number`の値は処理文を経て1024になります。そして次の条件式の段階で条件式を満たさなくなるため、そこで繰り返し処理がスキップされます。どのタイミングが最後の繰り返し処理となるのかをしっかりと理解しておきましょう。
 
 ## while文のfor文への書き換え
@@ -89,8 +93,8 @@ while (number < 1000) {
 先ほどのサンプルコード2の例を使って**_for文_**への書き換えを行うと次のようになります。
 
 ```js
-for(let number = 1;number<1000;){
-  number*=2;
+for(let number = 1; number < 1000;){
+  number *= 2;
   console.log(number);
 }
 ```
@@ -122,24 +126,34 @@ do {
 ```
 
 以下の例で繰り返し処理が実行されるのは、**_do-while文_**側のみです。**_while文_**は条件を満たさないので処理が実行されることはありません。
+
 ```js
 let i = 1;
 
-while (i < 1) {
-  console.log('while文を実行');
+while (i < 5) {
+  console.log(`i = ${i}: while文を実行`);
   i++;
 }
 
 let j = 1;
 
 do {
-  console.log('do-while文を実行');
+  console.log(`j = ${j}: do-while文を実行`);
   j++;
-} while (j < 1)
-
+} while (j < 5)
 ```
 
 出力結果：
-```js
-"do-while文を実行"
+
 ```
+i = 1: while文を実行
+i = 2: while文を実行
+i = 3: while文を実行
+i = 4: while文を実行
+j = 2: do-while文を実行
+j = 3: do-while文を実行
+j = 4: do-while文を実行
+j = 5: do-while文を実行
+```
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/8geqf3k9/4/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>

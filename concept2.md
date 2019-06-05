@@ -20,6 +20,7 @@ for (変数 in オブジェクト) {
 - サンプルコード
 
 次のサンプルコードの結果からもわかるように、変数にはオブジェクトの各値ではなく**プロパティ**が格納されることに注意してください。
+
 ```js
 let obj = {
   a: 1,
@@ -39,6 +40,8 @@ a
 b
 c
 ```
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/Lm5s694f/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 オブジェクトの中身の値を取り出したい場合は、`obj[item]`のようにプロパティ名を指定して取り出すことができます。
 
@@ -61,6 +64,8 @@ for (let item in obj) {
 2
 3
 ```
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/zqn1egt9/2/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## for-of文
 
@@ -98,3 +103,5 @@ for (let item of array) {
 40
 60
 ```
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/aLs8uy6f/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
